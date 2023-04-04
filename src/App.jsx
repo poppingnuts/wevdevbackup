@@ -1,15 +1,19 @@
 import { BrowserRouter } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import {
   About,
   Contact,
   Experience,
-  Feedbacks,
+  
   Hero,
   Navbar,
-  Tech,
+  
   Works,
   StarsCanvas,
+  EarthCanvas,
 } from "./components";
+import { slideIn } from "./utils/motion";
 
 const App = () => {
   return (
@@ -21,10 +25,17 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+      
         <Works />
-        <Feedbacks />
+        
         <div className="relative z-0">
+        <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] "
+      >
+        <EarthCanvas />
+      </motion.div>
+        
           <Contact />
           <StarsCanvas />
         </div>
