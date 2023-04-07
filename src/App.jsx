@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
 import {
   About,
   Contact,
@@ -12,9 +13,11 @@ import {
   Works,
   StarsCanvas,
   EarthCanvas,
+  
 } from "./components";
-import { slideIn } from "./utils/motion";
 
+import { slideIn } from "./utils/motion";
+import { whtsapp } from "./assets";
 const App = () => {
   return (
     <BrowserRouter>
@@ -38,7 +41,10 @@ const App = () => {
         
           <Contact />
           <StarsCanvas />
+
         </div>
+        <div class="sticky top-0 ..."><a href="https://wa.me/8088563651"><img src={whtsapp} alt="whtsapp" className="w-16 h-16 stic object-contains" /></a></div>
+        
       </div>
     </BrowserRouter>
   );
