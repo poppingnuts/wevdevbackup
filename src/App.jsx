@@ -43,7 +43,7 @@ const App = () => {
           <StarsCanvas />
 
         </div>
-        <div class="sticky top-0 ..."><a href="https://wa.me/8088563651"><img src={whtsapp} alt="whtsapp" className="w-16 h-16 stic object-contains" /></a></div>
+        <div class="sticky top-0 ..."><a href="https://wa.me/+918088563651"><img src={whtsapp} alt="whtsapp" className="w-16 h-16 stic object-contains" /></a></div>
         
       </div>
     </BrowserRouter>
