@@ -33,6 +33,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import whtsapp from "./tech/whtsapp.png"
+import calling from "./tech/calling.png"
 
 export {
   logo,
@@ -66,5 +67,6 @@ export {
   wordpress,
   python,
   shopify1,
-  whtsapp
+  whtsapp,
+  calling
 };

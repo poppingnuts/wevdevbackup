@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import { motion } from "framer-motion";
 import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas, EarthCanvas } from "./components";
 import { slideIn } from "./utils/motion";
-import { whtsapp } from "./assets";
+import { calling, whtsapp } from "./assets";
 
 const App = () => {
   return (
@@ -25,9 +25,14 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        <div style={{ position: 'fixed', bottom: '20px', right: '20px' }}>
+        <div style={{ position: 'fixed', bottom: '150px', right: '20px' }}>
           <a href="https://wa.me/+918088563651">
             <img src={whtsapp} alt="whtsapp" className="w-16 h-16 stic object-contains" />
+          </a>
+        </div>
+        <div style={{ position: 'fixed',bottom:"150px",left:"20px"}}>
+          <a href="tel:+918088563651">
+            <img src={calling} alt="calling" className="w-16 h-16 stic object-contains" />
           </a>
         </div>
       </div>
